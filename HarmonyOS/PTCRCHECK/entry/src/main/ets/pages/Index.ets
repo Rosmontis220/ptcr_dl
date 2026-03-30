@@ -9,7 +9,7 @@ struct Index {
   build() {
     Column() {
       Web({
-        src: 'http://1.94.185.51',
+        src: 'https://ptcr-check.xyz',
         controller: this.controller
       })
         .width('100%')

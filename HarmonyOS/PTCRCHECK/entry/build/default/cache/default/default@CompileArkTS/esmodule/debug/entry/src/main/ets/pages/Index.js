@@ -33,7 +33,7 @@ class Index extends ViewPU {
         this.observeComponentCreation((elmtId, isInitialRender) => {
             ViewStackProcessor.StartGetAccessRecordingFor(elmtId);
             Web.create({
-                src: 'http://1.94.185.51',
+                src: 'https://ptcr-check.xyz',
                 controller: this.controller
             });
             Web.width('100%');

@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge\ExtensionSettings\fihkcbfeegpmlalpjdhgoginklplpohl]
+"installation_mode"="allowed"
+"update_url"="https://clients2.google.com/service/update2/crx"

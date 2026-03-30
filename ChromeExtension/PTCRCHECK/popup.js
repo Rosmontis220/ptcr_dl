@@ -128,7 +128,7 @@
             formData.append('file', currentFile);
 
             try {
-                const API_URL = 'http://1.94.185.51:8000/predict';
+                const API_URL = 'https://api.ptcr-check.xyz/predict';
                 const response = await fetch(API_URL, {
                     method: 'POST',
                     body: formData,

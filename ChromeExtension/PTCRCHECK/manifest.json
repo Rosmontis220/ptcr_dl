@@ -8,7 +8,7 @@
   },
   "permissions": ["storage"],
   "host_permissions": [
-    "http://1.94.185.51:8000/*"
+    "https://api.ptcr-check.xyz/*"
   ],
   "web_accessible_resources": [
     {
