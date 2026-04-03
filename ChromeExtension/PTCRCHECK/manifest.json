@@ -1,22 +1,26 @@
 {
   "manifest_version": 3,
-  "name": "PTCR缺陷检测系统",
-  "version": "1.0",
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": "icon.png"
+  "name": "PTCR缺陷检测助手",
+  "version": "1.3",
+  "description": "一键将网络图片送入 PTCR 系统进行缺陷分析",
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
   },
-  "permissions": ["storage"],
-  "host_permissions": [
-    "https://api.ptcr-check.xyz/*"
-  ],
-  "web_accessible_resources": [
+  "permissions": ["contextMenus", "tabs", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "打开PTCR检测系统"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
     {
-      "resources": ["Resources/*"],
-      "matches": ["<all_urls>"]
+      "matches": ["https://ptcr-check.xyz/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
     }
-  ],
-  "content_security_policy": {
-    "extension_pages": "script-src 'self'; object-src 'self';"
-  }
+  ]
 }
